@@ -4,7 +4,7 @@
 local fs = require("nixio.fs")
 
 local m = Map("uhttpd", translate("uHTTPd"),
-	      translate("A lightweight single-threaded HTTP(S) server"))
+	      translate("一个轻量级单线程 HTTP(S) 服务器</br>修改设置后需重启路由器或在SSH中运行/etc/init.d/uhttpd restart重启uhttpd服务，以使设置生效"))
 
 local ucs = m:section(TypedSection, "uhttpd", "")
 ucs.addremove = true
